@@ -4,6 +4,11 @@
 set number
 set ruler
 set nocompatible
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+" Wrap text at 72 in git commits
+au FileType gitcommit set tw=72
 " allow unsaved background buffers and remember marks/undo for them
 set hidden
 " remember more commands and search history
